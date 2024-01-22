@@ -4,16 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML Elements</title>
+	<link >
+	<style>
+		
+	</style>
 </head>
 <body>
 	<!-- HTML Elements -->
 	<!-- Headings -->
-	<h1>First Heading</h1>
-	<h2>Second Heading</h2>
-	<h3>Third Heading</h3>
-	<h4>Forth Heading</h4>
+	<h1 id="firstheading">First Heading</h1>
+	<h2 class="textred secongclass thirdclass">Second Heading</h2>
+
+	<h3 style="color:blue; text-align: center;">Third Heading</h3>
+
+	<h4 class="textred">Forth Heading</h4>
 	<h5>Fifth Heading</h5>
-	<h6>Sixth Heading</h6>
+	<h6><span>Sixth</span> Heading</h6>
 	<!-- Paragraphs -->
 	<p>This is a <b>paragraph</b>. This is a paragraph.<br> This is a paragraph. </p>
 	<p>Another Paragraph</p>
@@ -59,7 +65,59 @@
 	<hr>
 	<!-- forms and form elements -->
 	<form>
+	<div>
+		<label for="username">Username: </label>
+	</div>
+	<div>
 		<input type="text" name="username" placeholder="Enter Username" required >
+	</div>
+		<!-- Type = password -->
+		<label>Password: </label>
+		<input type="password" name="password" placeholder="Enter password">
+		<label>Email: </label>
+		<input type="email" name="email" placeholder="Enter email">
+		<label>Height: </label>
+		<input type="number" name="height" placeholder="Enter height">
+		<label>DOB: </label>
+		<input type="date" name="dob" placeholder="Enter DOB">
+		<label>ID Card: </label>
+		<input type="file" name="idcard" >
+		<!-- radio button-->
+		<label>Gender</label>
+		<input type="radio" name="gender" value="Male">
+		<label>Male</label>
+		<input type="radio" name="gender" value="Female">
+		<label>Female</label>
+		<!-- checkbox -->
+		<label>Registered Units: </label>
+		<input type="checkbox" name="webdev" value="Web Dev">
+		<label>Web Development</label>
+		<input type="checkbox" name="software" value="Software">
+		<label>Software Engineering</label>
+
+		<!-- textarea -->
+		<label>Feedback</label>
+		<textarea name="Feedback" rows="10" cols="15"> Enter feedback..</textarea>
+		<!-- select -->
+		<label>Course: </label>
+		<select name="course">
+			<option disabled>--Select course--</option>
+			<option>DBIT</option>
+			<option>ICS</option>
+			<option>BBIT</option>
+		</select>
+		<!-- button element-->
+		<button>
+			<img src="cat.jpg" width="5%">
+		Signup
+		</button>
+
+		<!-- submit button -->
+		<input type="submit" name="register" value="Register">
+		<!-- reset button -->
+		<input type="reset" name="reset">
+		<input type="button" name="login" value="login">
+
 	</form>
 
 </body>

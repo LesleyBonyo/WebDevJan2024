@@ -4,18 +4,21 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
+		<link >
 	</head>
 	<body>
 	<!-- html elements -->
 	<!-- headings -->
-	<h1>First Heading</h1>
-	<h2>Second Heading</h2>
-	<h3>Third Heading</h3>
+	<h1 id="firstheading">First Heading</h1>
+	<h2 class="redtext secondclass thirdclass">Second Heading</h2>
+
+	<h3 style="color:red; text-align:center;">Third Heading</h3>
+
 	<h4>Forth Heading</h4>
 	<h5>Fifth Heading</h5>
 	<h6>Sixth Heading</h6>
 	<!-- paragraphs -->
-	<p>This is a <b>first paragraph</b>.<br> This is a first paragraph. This is a first paragraph.</p>
+	<p class="redtext">This is a <b>first paragraph</b>.<br> This is a first paragraph. This is a first paragraph.</p>
 	<hr> <!--horizontal rule -->
 	<p>Another paragraph</p>
 	<!-- hyperlinks/anchor tag-->
@@ -59,7 +62,56 @@
 	<!-- forms and form elements -->
 	<br>
 	<form>
-		<input type="text" placeholder="Enter Username" name="Username" required value="Jane">
+	<div>
+		<label for="username"><span>User</span>name: </label>
+	</div>
+	<div>	
+		<input type="text" placeholder="Enter Username" name="Username" required>
+	</div>
+
+		<label>Email: </label>
+		<input type="email" name="email" placeholder="Enter email">
+		<label>Password: </label>
+		<input type="password" name="password" placeholder="Enter password">
+		<label>Height: </label>
+		<input type="number" name="height" placeholder="Enter height">
+		<label>DOB: </label>
+		<input type="date" name="dob" placeholder="Enter DOB">
+		<label>ID Card: </label>
+		<input type="file" name="idfile" placeholder="Upload ID">
+		<!-- Radio buttons -->
+		<label>Gender</label>
+		<input type="radio" name="gender" value="Male">
+		<label>Male</label>
+		<input type="radio" name="gender" value="Female">
+		<label>Female</label>
+		<!-- Check box -->
+		<label>Register Units</label>
+		<input type="checkbox" name="Web" value="Web">
+		<label>Web Development</label>
+		<input type="checkbox" name="network" value="Networking">
+		<label>Networking</label>
+		<!-- textarea -->
+		<label>Feedback: </label>
+		<textarea rows="5" cols="15"> Enter feedback..</textarea>
+		<!-- select -->
+		<label>Course: </label>
+		<select name="course">
+			<option disabled>--Select Course--</option>
+			<option>DBIT</option>
+			<option>ICS</option>
+			<option>BBIT</option>
+		</select>
+		<!-- button element -->
+		<button>
+			<img src="cat.jpg" width="10%"> SignUp
+		</button>
+
+
+		<input type="submit" name="register" value="Register">
+
+		<input type="reset" name="reset">
+		<input type="button" name="login" value="login">
 	</form>
 
 	</body>
