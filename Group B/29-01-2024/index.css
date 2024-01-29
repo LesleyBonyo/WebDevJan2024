@@ -1,0 +1,37 @@
+h1 {
+	color: yellow;
+	text-decoration: overline;
+}
+/* CSS Selectors */
+/* Element selector eg p, h1, body */
+p {  }
+/* universal selector */
+* {
+	font-weight: bold;
+}
+/* id selector : #secondpar */
+#secondpar {
+	color: blue;
+}
+
+/* class selector */
+.firstclass {
+	font-size: 20px;
+	font-style: italic;
+}
+p.firstclass {
+
+}
+/* grouping selector */
+h2, p {
+	color: yellow;
+}
+h2 {
+	text-align: center;
+}
+/* descendant selector */
+div a {
+	color: green;
+}
+
+
