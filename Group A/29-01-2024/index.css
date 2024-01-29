@@ -1,0 +1,29 @@
+h1 {
+	color: green;
+	text-decoration: overline;
+}
+/* CSS selectors */
+/* element selector eg p,body,h1 */
+a {
+
+}
+/* universal selector */
+* {
+	/*background-color: yellow;*/
+}
+/* id selector */
+#firstpar {
+	color: green;
+}
+/* class selector */
+.firstclass {
+	font-style: italic;
+}
+/* grouping selector */
+h1, h2, #lastpar {
+	text-align: center;
+}
+/* descendant selector */
+div a {
+	color: green;
+}

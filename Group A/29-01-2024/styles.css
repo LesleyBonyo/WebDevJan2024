@@ -1,0 +1,9 @@
+h1 {
+	/* styling text */
+	/* color - changes text color 
+	color: green;*/
+	color: rgba(255, 0, 0, 0.2);
+	/*color: #0000FF;
+	color: hsl(80, 100%, 70%);*/
+
+}
