@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Montserrat&family=Poppins:wght@300;400&display=swap');
+
  h1 {
- 	/*color: rgb(0, 255, 0);
- 	color: #FF0000;*/
- 	color: hsl(45, 100%, 50%);
+ 	/* text propeties */
+ 	color: rgba(0, 255, 0,0.9);
+ 	/*color: #FF0000;
+ 	color: hsl(45, 100%, 50%);*/
+ 	text-align: center;
+ 	text-decoration: underline;
+ 	letter-spacing: 5px;
+ 	text-transform: uppercase;
  }
+ p {
+ 	line-height: 1.5;
+ 	/* font properties */
+ 	font-size: 20px;
+ 	font-family: Poppins, sans-serif;
+ 	font-style: italic;
+ 	font-weight: bold;
+ }
+ body {
+ 	/* background properties*/
+ 	background-color: #E7EBF0; 
+ 	/*background-image: url('cat.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-attachment: fixed;*/
+ }
+ /* hyperlinks */
+ a {
+ 	text-decoration: none;
+ 	/* borders 
+ 	border-width: 1px;
+ 	border-style: solid;
+ 	border-color: black;*/
+ 	border: 1px solid black;
+ 	border-radius: 5px;
+ 	/* padding 
+ 	padding-top: 10px;
+ 	padding-right: 10px;
+ 	padding-bottom: 10px;
+ 	padding-left: 10px;*/
+ 	padding: 10px;
+ 	/*margin */
+ 	margin: 10px;
+ 	display: block;
+ }
+ /* unvisited link */
+ a:link {
+ 	color: red;
+ }
+ /* visited link */
+ a:visited {
+ 	color: green;
+ }
+/* hover on a link */
+a:hover {
+	background-color: blue;
+	color: white;
+}
+/* selected link */
+a:active {
+	color: purple;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+tr:hover {
+	background-color: blue;
+	color: white;
+}
+
+[type="text"], [type="email"] {
+	display: block;
+	margin: auto;
+}
