@@ -1,0 +1,44 @@
+#topnav {
+	background-color: #56B69C;
+	list-style-type: none;
+	padding: 18px 10px;
+}
+li a{
+	text-decoration: none;
+	color: white;
+	padding: 9px 15px;
+}
+li a:hover {
+	color: #56B69C;
+	background-color: white;
+}
+#topnav li{
+	display: inline;
+}
+h1 {
+	text-align: center;
+}
+#signupform {
+	background-color: #56B69C;
+	border-radius: 5px;
+	margin: 40px 80px;
+	padding: 12px;
+}
+input, select, label {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+input, select{
+	padding: 15px 30px;
+	border-radius: 5px;
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+[type="submit"] {
+	margin-top: 8px;
+	background-color: black;
+	color: white;
+}

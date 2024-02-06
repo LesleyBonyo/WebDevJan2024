@@ -1,0 +1,29 @@
+#toplist {
+	background-color: #F6744F;
+	list-style-type: none;
+	padding: 10px 8px;
+}
+ li a{
+ 	color: white;
+ 	text-decoration: none;
+ 	padding: 10px 15px;
+ }
+ li a:hover{
+ 	color: #F6744F;
+ 	background-color: white;
+ }
+ #toplist li{
+ 	display: inline;
+ }
+ h1 {
+ 	text-align: center;
+ }
+
+ [type="email"], 
+ [type="password"], 
+ select {
+
+ }
+ #signupform {
+ 	background-color: #F6744F;
+ }

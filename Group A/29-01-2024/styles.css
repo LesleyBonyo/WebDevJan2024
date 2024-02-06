@@ -75,3 +75,28 @@ table, th, td {
 tr:hover{
 	background-color: blue;
 }
+
+#first, #second {
+	border: 1px solid black;
+	width: 250px;
+	height: 100px;
+}
+#first {
+	padding: 30px;
+}
+* {
+	box-sizing: border-box;
+}
+
+ol {
+	list-style-type: none;
+	float: left;
+}
+ul {
+	float: right;
+	/*clear: right;*/
+	list-style-type: square;
+}
+#second {
+	overflow: hidden;
+}
