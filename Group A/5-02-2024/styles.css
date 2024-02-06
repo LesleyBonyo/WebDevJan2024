@@ -2,6 +2,8 @@
 	background-color: #56B69C;
 	list-style-type: none;
 	padding: 18px 10px;
+	overflow: hidden;
+	margin: 0;
 }
 li a{
 	text-decoration: none;
@@ -10,10 +12,14 @@ li a{
 }
 li a:hover {
 	color: #56B69C;
-	background-color: white;
+	background-color: black;
 }
-#topnav li{
-	display: inline;
+.left{
+	/*display: inline;*/
+	float: left;
+}
+.right {
+	float: right;
 }
 h1 {
 	text-align: center;
@@ -41,4 +47,8 @@ input, select{
 	margin-top: 8px;
 	background-color: black;
 	color: white;
+	border: none;
+}
+[type="submit"]:hover {
+	opacity: 0.5;
 }
