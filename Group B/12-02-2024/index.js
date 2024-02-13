@@ -42,3 +42,24 @@ function totalCost(val1, val2){
 	return val1 + val2;
 }
 
+let x = 10;
+//let x = 'student';
+console.log(x);
+
+const y = 25;
+//y = 30;
+//conditional statements
+if (y > 30) {
+	console.log("Too high");
+} else if (y < 30) {
+	console.log("Too low");
+} else{
+	console.log("Perfect");
+}
+// for loop
+for(let i=0; i<5; i++){
+	console.log("I is " + i);
+}
+
+
+
