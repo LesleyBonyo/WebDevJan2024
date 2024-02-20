@@ -17,21 +17,35 @@
 	</ol>
 	<h1>Sign Up</h1>
 	<div id="signupform">
-	<form>
+	<form onsubmit="return validateInput()">
 		<label>Email: </label>
-		<input type="email" name="email" placeholder="Enter Email">
+		<input type="email" name="email" placeholder="Enter Email" id="email">
 		<label>Password: </label>
-		<input type="password" name="password" placeholder="Enter Password">
+		<input type="password" name="password" placeholder="Enter Password" id="password">
 		<label>Account: </label>
-		<select>
-			<option>--Select account--</option>
+		<select id="account">
+			<option value="">--Select account--</option>
 			<option>Student</option>
 			<option>Staff</option>
 		</select>
+		<div id="result" style="color:white; background-color: black;"></div>
 		<input type="submit" name="signup" value="SignUp">
 		
 	</form>
 	</div>
-
+	<script>
+		function validateInput() {
+			let email = document.getElementById('email').value;
+			let password = document.getElementById('password').value;
+			let account = document.getElementById('account').value;
+			let result = document.getElementById('result');
+			//check if fields are empty
+			if(email == "" || password == "" || account == ""){
+				//alert("Fields should not be empty");
+				result.innerHTML = "Fields should not be empty";
+				return false;
+			}
+		}
+	</script>
 </body>
 </html>

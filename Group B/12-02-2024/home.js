@@ -32,6 +32,22 @@ function getProduct(){
 	document.getElementById('num2');
 	//console.log(num1.value);
 	let product = num1.value * num2.value;
-	console.log(product);
+	//console.log(product);
+	let result = 
+		document.getElementById('result');
+	//result.innerHTML = product;
+	alert("The product is: " + product);
 	return false;
 }
+
+function clickMe() {
+	let output = 
+	document.getElementById('output');
+	for (let i=1; i<3; i++){
+		output.innerHTML += 
+		"Sentence: " + i + "<br>";
+	}
+}
+let button = 
+document.getElementById('button');
+button.addEventListener('click', clickMe);

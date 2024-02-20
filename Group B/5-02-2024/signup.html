@@ -16,13 +16,13 @@
 	<h1>SignUp</h1>
 
 	<div id="signupform">
-	<form>
+	<form onsubmit="validateForm()">
 		<label>Email: </label>
-		<input type="email" name="email" placeholder="Enter Email">
+		<input type="email" name="email" placeholder="Enter Email" id="email">
 		<label>Password: </label>
-		<input type="password" name="password" placeholder="Enter password">
+		<input type="password" name="password" placeholder="Enter password" id="password">
 		<label>Account: </label>
-		<select>
+		<select id="account">
 			<option>--Select Account--</option>
 			<option>Student</option>
 			<option>Lecturer</option>
@@ -30,6 +30,18 @@
 		<input type="submit" name="signup" value="SignUp">
 	</form>
 </div>
-
+<script >
+	function validateForm() {
+		// body...
+		let email = document.getElementById('email').value;
+		let password = document.getElementById('password').value;
+		let account = document.getElementById('account').value;
+		// check if field are empty
+		if (email == "" || password=="" || account=="") {
+			alert("Fields should not be empty");
+			return false;
+		}
+	}
+</script>
 </body>
 </html>
