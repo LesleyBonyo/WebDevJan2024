@@ -16,17 +16,19 @@
 	<h1>SignUp</h1>
 
 	<div id="signupform">
-	<form onsubmit="validateForm()">
+	<form onsubmit="return validateForm()" action="home.html">
 		<label>Email: </label>
 		<input type="email" name="email" placeholder="Enter Email" id="email">
 		<label>Password: </label>
 		<input type="password" name="password" placeholder="Enter password" id="password">
+		<div id="result1" style="color: white; background-color: blue; text-align: center;"></div>
 		<label>Account: </label>
 		<select id="account">
-			<option>--Select Account--</option>
+			<option value="">--Select Account--</option>
 			<option>Student</option>
 			<option>Lecturer</option>
 		</select>
+		<div id="result" style="color: white; background-color: blue; text-align: center;"></div>
 		<input type="submit" name="signup" value="SignUp">
 	</form>
 </div>
@@ -36,11 +38,30 @@
 		let email = document.getElementById('email').value;
 		let password = document.getElementById('password').value;
 		let account = document.getElementById('account').value;
-		// check if field are empty
+		let result = document.getElementById('result');
+		let result1 = document.getElementById('result1');
+
+		// check if fields are empty
 		if (email == "" || password=="" || account=="") {
-			alert("Fields should not be empty");
+			//alert("Fields should not be empty");
+			result.innerHTML = "Fields should not be empty";
+			return false;
+		} else{
+			result.innerHTML = "";
+		}
+		// check password length
+		if (password.length < 8) {
+			result1.innerHTML = "password should be 8 characters and above";
+			return false;
+		} else {
+			result1.innerHTML = "";
+		}
+		// check whether password has only letters
+		if (!password.match(/^[A-Za-z]+$/)) {
+			result1.innerHTML = "Password should have only letters";
 			return false;
 		}
+		return true;
 	}
 </script>
 </body>
