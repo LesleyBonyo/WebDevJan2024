@@ -73,6 +73,14 @@ function get_product($y, $x){
 	return $y * $x;
 }
 echo get_product(10, 13);
+// in built functions - 
+//isset() - it has been declared and it is not null
+$a = null;
+if (isset($a)) {
+	echo "Variable has been set";
+} else{
+	echo "Variable not set";
+}
 
 
 
