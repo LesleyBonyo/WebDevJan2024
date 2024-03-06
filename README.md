@@ -12,6 +12,21 @@ CSS Basics : <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Gro
 CSS Properties : <a href="https://github.com/LesleyBonyo/WebDevJan2024/blob/main/Group%20A/29-01-2024/styles.css">CSS Properties</a> <br><br>
 signup form and top navigation bar : <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20A/5-02-2024">Design a simple sign up form</a>
 <br>
+## JavaScript Class
+Add interactivity to your page using JavaScript.
+<br><br>
+JavaScript syntax :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20A/12-02-2024"> JS Syntax</a> 
+ <br><br>
+ JavaScript HTML DOM :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20A/12-02-2024"> JS HTML DOM</a> 
+ <br><br>
+ JavaScript Form Validation:  <a href="https://github.com/LesleyBonyo/WebDevJan2024/blob/main/Group%20A/5-02-2024/signup.html"> Form Validation</a> 
+ <br><br>
+
+ ## PHP
+Connect to and manipulate databases using PHP.
+<br><br>
+PHP syntax :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20A/26-02-2024a"> PHP Syntax</a> 
+ <br><br>
 <hr>
 <h2>Group B</h2>
 
