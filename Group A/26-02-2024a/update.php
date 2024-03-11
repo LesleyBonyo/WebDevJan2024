@@ -50,11 +50,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$course = $_POST['course'];
 	$age = $_POST['age'];
 	// create operation/insert
-	$sql = "INSERT INTO students(first_name, last_name, course, age) VALUES('$first_name', '$last_name', '$course',  $age)";
+	$sql = "UPDATE students SET first_name='$first_name', last_name='$last_name', course='$course', age=$age WHERE student_id=$updateid";
 	// execute query
 	$result = mysqli_query($connect, $sql);
 	if ($result) {
-		echo "registration successful";
+		//echo "Update successful";
+		header('location:display.php');
 	} else {
 		die(mysqli_error($connect));
 	}
