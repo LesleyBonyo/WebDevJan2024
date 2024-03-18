@@ -15,6 +15,7 @@ if ($result) {
     $password_hash = $row['password'];
     //compare password from user with the hash in the db
     if (password_verify($password, $password_hash)) {
+      //login successful
       $success = 1;
     } else{
       $unsuccess = 1;
@@ -57,7 +58,13 @@ if ($result) {
   </div>
   <?php
     if($success) {
-    echo "<div class='error'>Login Successfull</div>";
+    //echo "<div class='error'>Login Successfull</div>";
+      //start a user session
+      session_start();
+      $_SESSION['email'] = $email;
+      $_SESSION['userid']= $row['id'];
+      header("location:home.php");
+
   }
   if($unsuccess) {
     echo "<div class='error'>Invalid login</div>";
