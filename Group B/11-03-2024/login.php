@@ -15,7 +15,12 @@
         $password_hash = $account['password'];
         //password_verify() - compares the hash password with the password the user has inputed
         if (password_verify($password, $password_hash)) {
-          echo "Login successful";
+          //echo "Login successful";
+          //sessions - to store user data(in variables) accross multiple pages
+          session_start();//start user session
+          $_SESSION['email'] = $email;
+          $_SESSION['id'] = $account['id'];
+          header("location:home.php");
         }else{
           // echo "Invalid login";
           $unsuccess = 1;
