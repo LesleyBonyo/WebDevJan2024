@@ -27,6 +27,8 @@ Connect to and manipulate databases using PHP.
 <br><br>
 PHP syntax :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20A/26-02-2024a"> PHP Syntax</a> 
  <br><br>
+ PHP and MYSQL Task App :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20A/11-03-2024a"> Task App</a> 
+ <br><br>
 <hr>
 <h2>Group B</h2>
 
@@ -54,4 +56,6 @@ JavaScript syntax :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/
 Connect to and manipulate databases using PHP.
 <br><br>
 PHP syntax :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20B/26-02-2024"> PHP Syntax</a> 
+ <br><br>
+ PHP and MYSQL Task App :  <a href="https://github.com/LesleyBonyo/WebDevJan2024/tree/main/Group%20B/11-03-2024"> Task App</a> 
  <br><br>
